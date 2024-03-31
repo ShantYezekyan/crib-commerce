@@ -1,0 +1,103 @@
+:root {
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  background-image: url("/hero.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+
+  .hero-content {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    h1 {
+      font-size: 80px;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: rgb(190, 190, 190);
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 16px;
+      color: white;
+      background-color: #1677ff;
+      border-radius: 12px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 20px;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #5294f0;
+      }
+
+      &:active {
+        background-color: #0d6aec;
+      }
+    }
+  }
+}
+
+.full-page {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .hero-content {
+    position: static;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero .hero-content h2 {
+    font-size: 20px;
+  }
+
+  .hero .hero-content a {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

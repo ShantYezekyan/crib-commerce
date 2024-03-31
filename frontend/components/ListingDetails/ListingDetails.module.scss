@@ -1,0 +1,56 @@
+.previewImage {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  p {
+    font-size: 16px;
+    color: #333;
+  }
+}
+
+.adminTools {
+  display: flex;
+  gap: 10px;
+}
+
+.info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  span {
+    font-size: 16px;
+    color: #666;
+  }
+}
+
+.location {
+  display: flex;
+  gap: 6px;
+}
+
+.other {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,23 @@
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.cardInfo {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+
+  div {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px
+  }
+  
+  span {
+    margin-top: 2px;
+  }
+}
